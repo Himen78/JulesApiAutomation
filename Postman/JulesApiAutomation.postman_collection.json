@@ -75,7 +75,7 @@
 							"mode": "graphql",
 							"graphql": {
 								"query": "mutation Login($email: String!, $password: String!) {\r\n  login(email: $email, password: $password) {\r\n    token\r\n    defaultPage\r\n    shouldUseAwsServer\r\n  }\r\n}",
-								"variables": "{  \r\n \"email\": \"{{API_USERNAME}}\",\r\n  \"password\": \"{{API_PASSWORD}}\"\r\n}"
+								"variables": "{  \r\n \"email\": \"{{email}}\",\r\n   \"password\": \"{{password}}\"\r\n}"
 							}
 						},
 						"url": {
@@ -351,13 +351,13 @@
 			"value": "https://demo.api.julesai.com"
 		},
 		{
-			"key": "API_USERNAME",
-			"value": "",
+			"key": "email",
+			"value": "qa@julesai.com",
 			"type": "string"
 		},
 		{
-			"key": "API_PASSWORD",
-			"value": "",
+			"key": "password",
+			"value": "Jay@2132001",
 			"type": "string"
 		},
 		{
