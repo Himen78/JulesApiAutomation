@@ -26,8 +26,6 @@ jobs:
       - name: Run Postman collection
         run: |
           newman run ./Postman/JulesApiAutomation.postman_collection.json \
-            --env-var "email=${{ secrets.API_USERNAME }}" \
-            --env-var "password=${{ secrets.API_PASSWORD }}" \
             --delay-request 2000 \
             -r htmlextra \
             --reporter-htmlextra-export ./newman/report.html
