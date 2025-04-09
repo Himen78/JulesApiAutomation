@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Postman collection
         run: |
-          newman run ./Postman/your-collection.json \
+          newman run ./Postman/JulesApiAutomation.postman_collection.json \
             --delay-request 2000 \
             -r htmlextra \
             --reporter-htmlextra-export ./newman/report.html
