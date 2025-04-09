@@ -4,7 +4,7 @@
 		"name": "JulesApiAutomation",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "6226420",
-		"_collection_link": "https://automation-team-123456.postman.co/workspace/168b1fad-dcc1-49dc-9e7f-4bedf3612d56/collection/6226420-73e5601a-1540-4495-a5a0-2f8fb2dcbc42?action=share&source=collection_link&creator=6226420"
+		"_collection_link": "https://automation-team-123456.postman.co/workspace/API-Automation~168b1fad-dcc1-49dc-9e7f-4bedf3612d56/collection/6226420-73e5601a-1540-4495-a5a0-2f8fb2dcbc42?action=share&source=collection_link&creator=6226420"
 	},
 	"item": [
 		{
@@ -75,7 +75,7 @@
 							"mode": "graphql",
 							"graphql": {
 								"query": "mutation Login($email: String!, $password: String!) {\r\n  login(email: $email, password: $password) {\r\n    token\r\n    defaultPage\r\n    shouldUseAwsServer\r\n  }\r\n}",
-								"variables": "{  \r\n \"email\": \"{{email}}\",\r\n   \"password\": \"{{password}}\"\r\n}"
+								"variables": "{  \r\n \"email\": \"{{API_USERNAME}}\",\r\n  \"password\": \"{{API_PASSWORD}}\"\r\n}"
 							}
 						},
 						"url": {
@@ -351,13 +351,13 @@
 			"value": "https://demo.api.julesai.com"
 		},
 		{
-			"key": "email",
-			"value": "qa@julesai.com",
+			"key": "API_USERNAME",
+			"value": "",
 			"type": "string"
 		},
 		{
-			"key": "password",
-			"value": "Jay@2132001",
+			"key": "API_PASSWORD",
+			"value": "",
 			"type": "string"
 		},
 		{
